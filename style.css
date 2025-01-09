@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body{
+    align-items: center;
+    background-image: url(bgimage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.watchdisplay{
+    color: white;
+    background-image: url(watchbg.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.655);
+    border-radius: 20px;
+    width: 20%;
+    height: 30%;
+    border: 5px solid   #000000;
+} 
+.landingPage{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.date{
+    align-self: start;
+    margin: 30px;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.time{
+    font-size: 50px;
+    font-weight: 700;
+}
+.nextpageButton{
+    margin-top: 30px;
+    align-self: flex-end;
+    border: none;
+    background-color: #000000b1;
+    color: white;
+}
+.nextpageButton:hover{
+    scale: 1.1;
+}
+.nextpageButton:active{
+    scale: 1.0;
+}
