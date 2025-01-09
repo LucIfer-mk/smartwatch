@@ -10,13 +10,56 @@
     <div class="container">
         <div class="watchdisplay">
             <!-- Landing page and its actve page  -->
-            <div class="landingPage active">
-                <div class="date" id="date">00/00/00</div>
-                <div class="time" id="time">00:00:00</div>
-                
+            <div id="landPage" class="page active ">
+                <div  class="landingPage">
+                    <div class="date" id="date">00/00/00 
+                        <input type="text">
+                    </div>
+                    <div class="time" id="time">00:00:00</div>
+                    <div class="applicationIcons">
+                        <button  class="iconButton" onclick="pageland('weatherPage')"><img src="./assets/weather icon.svg" class="appIcon"></button>
+                        <button class="iconButton" onclick="pageland('stopWatchPage')"><img src="./assets/stopwatchicon.svg" class="appIcon"></button>
+                        <button class="iconButton" onclick="pageland('moreApps')"><img src="./assets/appsicon.svg" class="appIcon" ></button>
+                    </div>
+                </div>
             </div>
-            
+            <!-- This is for more apps -->
+             <div id="moreApps" class="page ">
+                <div class="appContainer">
+                    <button  class="iconButton" onclick="pageland('weatherPage')"><img src="./assets/weather icon.svg" class="appIcon"><p>Weather</p></button>
+                    <button class="iconButton" onclick="pageland('stopWatchPage')"><img src="./assets/stopwatchicon.svg" class="appIcon"><p>Timer</p></button>
+                    <button class="iconButton" onclick="pageland('gamePage')"><img src="./assets/gameicon.svg" class="appIcon"> <p>Games</p></button>
+                    <button class="iconButton" onclick="pageland('worldClock')"><img src="./assets/worldclockicon.svg" class="appIcon"><p>Clock</p></button>
 
+                    <button class="iconButton" onclick="pageland('notePage')"><img src="./assets/noteicon.svg" class="appIcon"><p>Notes</p></button>
+                    <button class="iconButton" onclick="pageland('GalleryPage')"><img src="./assets/galleryicon.svg" class="appIcon"> <p>Gallery</p></button>
+                    <button class="iconButton" onclick="pageland('healthCare')"><img src="./assets/healthcare.svg" class="appIcon"><p>Health</p></button>
+
+                    
+
+                </div>    
+             </div>
+            <!-- This is a weather page -->
+            <div id="weatherPage" class="page ">
+                <h1>Hi im weather</h1>
+                <div class="homebutton"><button class="iconButton" onclick="pageland('landPage')" ><img src="./assets/homeicon.svg" class="appIcon" ></button></div>
+             </div>
+
+            <!-- This is stopwatch page -->
+             <div id="stopWatchPage" class="page ">
+                <div id="stopwatchContainer" class="stopwatchContainer">00:00:00:00</div>
+                <div class="stopwatchbuttons">
+                  <button class="stopWButt" onclick="start()">Start</button>
+                  <button class="stopWButt" onclick="stop()">Stop</button>
+                  <button class="stopWButt" onclick="reset()">Reset</button>  
+                </div>
+                <div class="homebutton"><button class="iconButton" onclick="pageland('landPage')" ><img src="./assets/homeicon.svg" class="appIcon" ></button></div>
+             </div> 
+             <!-- This is for Game -->
+              <div id="gamePage" class="page">
+                <h1>hi im game</h1>
+                <div class="homebutton"><button class="iconButton" onclick="pageland('landPage')" ><img src="./assets/homeicon.svg" class="appIcon" ></button></div>
+              </div>
         </div>
     </div>
     <script src="script.js"></script>
